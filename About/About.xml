@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>ReGrowth: Aspen</name>
+	<name>ReGrowth 2: Aspen</name>
 	<author>Helixien</author>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>ReGrowth.BOTR.AspenForest</packageId>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2545774148</url>
@@ -20,7 +21,7 @@ ReGrowth is designed to be as lightweight as possible, adding the minimum of new
 	<modDependencies>
 		<li>
 			<packageId>ReGrowth.BOTR.Core</packageId>
-			<displayName>ReGrowth: Core</displayName>
+			<displayName>ReGrowth 2</displayName>
 			<downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
 		</li>
