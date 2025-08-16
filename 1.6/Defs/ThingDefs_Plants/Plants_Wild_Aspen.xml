@@ -9,7 +9,7 @@
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RG_TallGrassBase">
-		<defName>Plant_TallGrass</defName>
+		<defName>RG_Plant_TallAspenGrass</defName>
 		<description>Wild tall grass. Grows in aspen forest regions where there is a little light and minimally fertile ground.</description>
 		<graphicData>
 			<texPath>Things/Plant/RG_AspenGrass</texPath>
@@ -46,7 +46,7 @@
 			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RG_AspenShrubs</texPath>
+			<texPath>Things/Plant/RG_SaffronCushion</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
@@ -213,7 +213,7 @@
 		<label>aspen tree</label>
 		<description>A genetically modified cold-biome tree known for its thin, white, paper-like bark and colourful leaves.</description>
 		<graphicData>
-			<texPath>Things/Plant/TreeYellowAspen</texPath>
+			<texPath>Things/Plant/RG_TreeYellowAspen</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.15, 0.3, 0.1)</volume>

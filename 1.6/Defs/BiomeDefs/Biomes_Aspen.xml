@@ -7,12 +7,33 @@
 		<workerClass>ReGrowthCore.BiomeWorker_AspenForest</workerClass>
 		<animalDensity>2.5</animalDensity>
 		<plantDensity>0.40</plantDensity>
-		<settlementSelectionWeight>1</settlementSelectionWeight>
-		<movementDifficulty>0.8</movementDifficulty>
-		<texture>World/Biomes/AspenForest</texture>
-		<forageability>1</forageability>
+		<settlementSelectionWeight>0.9</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<forageability>0.8</forageability>
 		<foragedFood>RawBerries</foragedFood>
-		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<wildPlantRegrowDays>23</wildPlantRegrowDays>
+		<lakeBeachTerrain>Marsh</lakeBeachTerrain>
+		<mudTerrain>Marsh</mudTerrain>
+		<riverbankTerrain>Riverbank</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<texture>World/Biomes/AspenForest</texture>
+		<maxFishPopulation>500</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common>
+				<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Fish_Frostfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Frostfish>
+			</freshwater_Uncommon>
+			<saltwater_Common>
+				<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+				<Fish_Cod MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Cod>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Fish_Dogfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Dogfish>
+			</saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Cold</rareCatchesSetMaker>
+		</fishTypes>
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
@@ -24,10 +45,6 @@
 			</li>
 			<li>
 				<diseaseInc>Disease_Plague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Malaria</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
@@ -53,6 +70,10 @@
 			<li>
 				<diseaseInc>Disease_AnimalPlague</diseaseInc>
 				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_OrganDecay</diseaseInc>
+				<commonality>10</commonality>
 			</li>
 		</diseases>
 		<terrainsByFertility>
@@ -103,12 +124,13 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<Blizzard MayRequire="Ludeon.RimWorld.Odyssey">1</Blizzard>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
 			<RG_Drizzle>2</RG_Drizzle>
 			<RG_FoggySnow>2</RG_FoggySnow>
-			<RG_Overcast>6</RG_Overcast>
 			<RG_Windy>8</RG_Windy>
-			<RG_Blizzard>0.5</RG_Blizzard>
-			<RG_Monsoon>0.5</RG_Monsoon>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>3.5</Plant_Grass>
@@ -127,12 +149,13 @@
 			<Plant_TreePine>0.2</Plant_TreePine>
 			<Plant_Berry>0.07</Plant_Berry>
 			<RG_BogBeacon>0.05</RG_BogBeacon>
-			<RG_Plant_BogBeacon>0.000000000000001</RG_Plant_BogBeacon>
 			<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0 because fuck me I gues... ==============-->
 			<Plant_HealrootWild>0.05</Plant_HealrootWild>
 			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
 			<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">4</Plant_TreeGrayPine>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+			<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 		</wildPlants>
 		<wildAnimals>
 			<Yak>0.12</Yak>
@@ -157,7 +180,16 @@
 			<Cougar>0.07</Cougar>
 			<Lynx>0.07</Lynx>
 			<Warg>0.07</Warg>
-			<!--			<RG_FrostbiteSpider>0.07</RG_FrostbiteSpider>-->
+			<Moose MayRequire="Ludeon.RimWorld.Odyssey">0.2</Moose>
+			<Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.02</Wolf_Great>
+			<Porcupine MayRequire="Ludeon.RimWorld.Odyssey">0.2</Porcupine>
+			<Badger MayRequire="Ludeon.RimWorld.Odyssey">0.2</Badger>
+			<Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
+			<Mink MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mink>
+			<Heron MayRequire="Ludeon.RimWorld.Odyssey">0.2</Heron>
+			<Swan MayRequire="Ludeon.RimWorld.Odyssey">0.1</Swan>
+			<Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+			<Crow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Crow>
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
@@ -165,6 +197,11 @@
 			<Raccoon>0.25</Raccoon>
 			<Warg>0.05</Warg>
 		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Walrus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Walrus>
+			<SeaLion MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaLion>
+			<Otter MayRequire="Ludeon.RimWorld.Odyssey">0.1</Otter>
+		</coastalWildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 		</allowedPackAnimals>
